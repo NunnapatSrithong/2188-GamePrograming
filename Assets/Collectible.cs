@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    public itemcollectible color;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public itemcollectible color;
+    [SerializeField] private SoCollectible soCollectible;
+    [SerializeField] private Respawn respawn;
+
+     private void Start()
     {
-        
+        Debug.Log(soCollectible.GetCollectible());
+    }
+    private void OnDisable()
+    {
+        respawn.RespawnItem();
     }
 }

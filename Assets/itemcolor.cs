@@ -5,3 +5,11 @@ public enum itemcollectible
     Red,
 
 }
+
+public enum CollectibleType
+{
+    DoubleJump,
+    RefillHealth,
+    RefillEnergy,
+    RefillDash,
+}
