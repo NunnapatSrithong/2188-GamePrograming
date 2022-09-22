@@ -13,8 +13,12 @@ public class Collectible : MonoBehaviour
     {
         Debug.Log(soCollectible.GetCollectible());
     }
-    private void OnDisable()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        respawn.RespawnItem();
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            respawn.RespawnItem();
+        }
     }
 }

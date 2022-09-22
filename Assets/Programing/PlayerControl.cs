@@ -92,7 +92,7 @@ public class PlayerControl : MonoBehaviour
                     break;
             }
 
-            collectible.gameObject.SetActive(false);
+           
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
@@ -111,7 +111,7 @@ public class PlayerControl : MonoBehaviour
 
     private bool CheckGrounded()
     {
-        float extendedHeight = 0.1f;
+        float extendedHeight = 0.05f;
         Bounds boxColliderBar = boxCollider2D.bounds;
         RaycastHit2D raycastHit2D = Physics2D.BoxCast(boxColliderBar.center, boxColliderBar.size,
              0f, Vector2.down, extendedHeight, groundLayer);
