@@ -63,4 +63,13 @@ public class PlayerCollision : MonoBehaviour
 
         #endregion
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (_playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            playerController.FallOnGround();
+        }
+    }
+
 }

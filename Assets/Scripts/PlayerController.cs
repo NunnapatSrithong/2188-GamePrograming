@@ -141,6 +141,11 @@ public class PlayerController : MonoBehaviour
         _gameManager.ProcessPlayerDeath();
 
     }
+
+    public void FallOnGround()
+    {
+        playerAudio.PlayFallSound();
+    }
     
     #endregion
     

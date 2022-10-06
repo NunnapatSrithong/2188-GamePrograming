@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4702855049689584000}
   - component: {fileID: 4702855049689584001}
   - component: {fileID: 4702855049689584030}
+  - component: {fileID: 2405882607573858547}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -105,6 +106,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2405882607573858547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702855049689584003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7efb57901f25c54797aaccd0dbb2039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPad: {fileID: 4702855050443889362}
 --- !u!1 &4702855050443889367
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,3 +193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4702855049689584030}
   jumpPadForce: 13
+  additionalSleepJumpTime: 0.3
+  springAudioClips: {fileID: 0}
+  jumpPadAudioSource: {fileID: 0}

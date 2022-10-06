@@ -8,6 +8,7 @@ public class PlayerAudioController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private SoAudioClip walkAudioClips;
     [SerializeField] private SoAudioClip jumpAudioClips;
+    [SerializeField] private SoAudioClip fallAudioClips;
 
     public void PlayJumpSound()
     {
@@ -18,5 +19,8 @@ public class PlayerAudioController : MonoBehaviour
     {
         audioSource.PlayOneShot(walkAudioClips.GetAudioClip());
     }
-
+    public void PlayFallSound()
+    {
+        audioSource.PlayOneShot(fallAudioClips.GetAudioClip());
+    }
 }

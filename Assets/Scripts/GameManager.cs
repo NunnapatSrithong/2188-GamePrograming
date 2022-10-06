@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     // Simple singleton script. This is the easiest way to create and understand a singleton script.
     [SerializeField] private HealthDisplay healthDisplay;
     [SerializeField] private int health = 3;
+    [SerializeField] private AudioSource persistantPlayerAudio;
+    [SerializeField] private SoAudioClip winAudioClips;
+    [SerializeField] private SoAudioClip dealthAudioClips;
     private void Awake()
     {
         var numGameManager = FindObjectsOfType<GameManager>().Length;
@@ -26,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         health--;
         healthDisplay.UpdateHealth(health);
+        PlayDeadSound();
         //SceneManager.LoadScene(GetCurrentBuildIndex());
         if(health == 0) { LoadMainMenu(); }
         else { LoadLevel(GetCurrentBuildIndex()); }
@@ -61,5 +65,15 @@ public class GameManager : MonoBehaviour
     private int GetCurrentBuildIndex()
     {
         return SceneManager.GetActiveScene().buildIndex;
+    }
+
+    public void PlayWinSound()
+    {
+        persistantPlayerAudio.PlayOneShot(winAudioClips.GetAudioClip());
+    }
+
+    private void PlayDeadSound()
+    {
+        persistantPlayerAudio.PlayOneShot(dealthAudioClips.GetAudioClip());
     }
 }
