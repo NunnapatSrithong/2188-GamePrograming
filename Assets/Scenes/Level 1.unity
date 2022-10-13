@@ -208,7 +208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225990469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.63, y: -0.69, z: 0}
+  m_LocalPosition: {x: -5.63, y: -0.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -448,7 +448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.032565713, y: 0.1371299, z: -10}
+  m_LocalPosition: {x: -0.07464436, y: 0.13722003, z: -10}
   m_LocalScale: {x: 0.8728755, y: 0.99399674, z: 0.91161}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -520,7 +520,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -845,10 +845,6 @@ PrefabInstance:
       propertyPath: endPoint
       value: 
       objectReference: {fileID: 225990469}
-    - target: {fileID: 8009499048298378023, guid: 5089e2c7b15216d418c9264368632330, type: 3}
-      propertyPath: collectibleObject
-      value: 
-      objectReference: {fileID: 11400000, guid: e27f069fc38551a4f9c3d594b2ef09d5, type: 2}
     - target: {fileID: 8571762190874291829, guid: 5089e2c7b15216d418c9264368632330, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1210,7 +1206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094049902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.55764556, y: -0.87000024, z: -10}
+  m_LocalPosition: {x: -0.57195187, y: -0.87000024, z: -10}
   m_LocalScale: {x: 0.6375, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1335,10 +1331,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1224453180}
     m_Modifications:
-    - target: {fileID: -8682422404570236971, guid: 1688c7a5dcceac54eb2cfddede3a1be7, type: 3}
-      propertyPath: levelToLoad
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3132454865923157760, guid: 1688c7a5dcceac54eb2cfddede3a1be7, type: 3}
       propertyPath: m_Name
       value: FinishGate
@@ -1566,9 +1558,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8883249241676883846, guid: c490658654f0f434ab765746ac72c910, type: 3}
-      propertyPath: fallAudioClips
-      value: 
-      objectReference: {fileID: 11400000, guid: 480424e57ce3df44f81029e4e2adf43f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c490658654f0f434ab765746ac72c910, type: 3}

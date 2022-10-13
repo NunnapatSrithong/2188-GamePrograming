@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private float _lastJumpTimer;
 
     // Stored References
-    private GameManager _gameManager;
+    [SerializeField] private GameManager _gameManager;
 
     private void Start()
     {
@@ -53,6 +53,13 @@ public class PlayerController : MonoBehaviour
     }
 
     #region Actions
+    public ParticleSystem dust;
+
+    public void CreateDust()
+    {
+        dust.Play();
+    }
+
 
     private void Move()
     {
@@ -134,17 +141,30 @@ public class PlayerController : MonoBehaviour
     {
         _canDoubleJump = true;
     }
-    
+
+    public ParticleSystem hurt;
+    public void CreateBlood()
+    {
+        hurt.Play();
+    }
+
     public void TakeDamage()
     {
         _gameManager = FindObjectOfType<GameManager>();
         _gameManager.ProcessPlayerDeath();
+        hurt.Play();
+    }
 
+    public ParticleSystem FallDirt;
+    public void FallOnDirt()
+    {
+        FallDirt.Play();
     }
 
     public void FallOnGround()
     {
         playerAudio.PlayFallSound();
+        FallDirt.Play();
     }
     
     #endregion
@@ -156,6 +176,7 @@ public class PlayerController : MonoBehaviour
         _moveInput = value.Get<float>();
         
         FlipPlayerSprite();
+
     }
 
     private void OnJump(InputValue value)

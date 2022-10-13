@@ -6358,7 +6358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1773615020}
+  - {fileID: 2033205742}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6428,7 +6428,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3132454865923157761, guid: 1688c7a5dcceac54eb2cfddede3a1be7, type: 3}
   m_PrefabInstance: {fileID: 1670649517}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1773615019
+--- !u!1001 &1999545017
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6485,11 +6485,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c490658654f0f434ab765746ac72c910, type: 3}
---- !u!4 &1773615020 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8807623583782796298, guid: c490658654f0f434ab765746ac72c910, type: 3}
-  m_PrefabInstance: {fileID: 1773615019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2005517878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,6 +6546,11 @@ PolygonCollider2D:
       - {x: -2.089934, y: 0.6905601}
       - {x: -2.0970864, y: -2.07341}
       - {x: 2.8734663, y: -2.0906205}
+--- !u!4 &2033205742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8807623583782796298, guid: c490658654f0f434ab765746ac72c910, type: 3}
+  m_PrefabInstance: {fileID: 1999545017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038866086
 GameObject:
   m_ObjectHideFlags: 0
